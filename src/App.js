@@ -1,42 +1,56 @@
 import React from 'react'
+import { Route, Link, Switch } from 'react-router-dom'
+import './css/core.css'
 
-import './App.css'
+import Home from './components/Home'
+import Family from './components/family/Family'
+import Senior from './components/Senior'
+import Baby from './components/Baby'
+import Wedding from './components/Wedding'
+import Toy from './components/Toy'
+import Easter from './components/Easter'
+import Valentines from './components/Valentines'
+import Sports from './components/Sports'
 
-const App = () => {
+export default function App() {
+
   return (
     <div className="App">
-      {/* Remove everything from this line to line 37 */}
-      <h2>Welcome Lambda student! This is filler, no need to keep it!</h2>
-      <a href="https://lambdaschool.com/" target="_blank" rel="noopener noreferrer">
-        Visit the Lambda Llama home
-      </a>
-      <br />
-      <img
-        alt="Lambda loves our llamas!"
-        style={{ width: 'auto', height: '300px' }}
-        src="https://pbs.twimg.com/media/Egh41YNU4AADnsM.png"
-      ></img>
-      <div>
-        <p>Created using Create-React-App</p>
-        <p>Modified and maintained by Lambda School graduate:</p>
-        <p>
-          Zac Smith {' '}
-          <a href="https://github.com/mrzacsmith" target="_blank" rel="noopener noreferrer">
-            Github
-          </a>{' '}
-          ::{' '}
-          <a href="https://www.npmjs.com/~mrzacsmith" target="_blank" rel="noopener noreferrer">
-            NPM
-          </a>{' '}
-          ::{' '}
-          <a href="https://twitter.com/mrzacsmith" target="_blank" rel="noopener noreferrer">
-            Twitter
-          </a>
-        </p>
+      <div className='header'>
+        <img src="https://images.lah-photography.com/logo.jpg" alt="lah" />
+        <nav>
+          <a href="https://lah-photography.com">Home</a>
+          <Link to="/">Gallery Home</Link>
+          <a href="https://archive.lah-photography.com">Archives</a>
+          <a href="https://lah-photography.com/contact">Contact</a>
+        </nav>
       </div>
-      {/* Remove everything from line 8 to here */}
+      <div className='main'>
+      <Switch>
+          <Route path="/family" component={Family} />
+          <Route path="/senior" component={Senior} />
+          <Route path="/baby" component={Baby} />
+          <Route path="/wedding" component={Wedding} />
+          <Route path="/toy">
+            <Toy />
+          </Route>
+          <Route path="/easter">
+            <Easter />
+          </Route>
+          <Route path="/valentines">
+            <Valentines />
+          </Route>
+          <Route path="/sports">
+            <Sports />
+          </Route>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </div>
+      <div className='footer center'>
+        <p>(c) Copyright 2020</p>
+        <p><a href="https://beedev-itservices.com">Made by BeeDev Services</a> <img src="https://images.craftsnherbs.com/beedev/beelogo.jpg" alt="beedev logo" /></p>
+        <p><a href="mailto:webmaster@lah-photography.com">webmaster@lah-photography.com</a></p>
+      </div>
     </div>
   )
 }
-
-export default App

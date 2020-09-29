@@ -1,0 +1,452 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumnalt {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  margin: auto;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .header {
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .header img {
+  width: 13em;
+  justify-content: center;
+  align-self: center;
+}
+.App .header nav {
+  background-color: #d49fb3;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .header nav #myLinks {
+  display: none;
+}
+.App .header nav #desktop {
+  display: none;
+}
+.App .header nav a {
+  color: #121212;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.App .header nav a .icon {
+  background: #d49fb3;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.App .header nav a:hover {
+  background-color: #121212;
+  color: #fff;
+  font-weight: bold;
+}
+.App .header nav a:visited {
+  text-decoration: none;
+}
+.App .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 1em 0.5em 2em 0.5em;
+  border: 4px groove #d49fb3;
+  border-radius: 5%;
+  width: 95%;
+}
+.App .main .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.App .main .heading h1 {
+  font-size: 2.5em;
+  justify-content: center;
+  text-align: center;
+}
+.App .main .heading h2 {
+  font-size: 2.25em;
+}
+.App .main .heading h3 {
+  font-size: 1.5em;
+  margin: 0.5em;
+  text-align: center;
+}
+.App .main .heading .otherlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .main .heading .otherlinks p {
+  font-size: 1.1em;
+  padding: 0.8em;
+}
+.App .main .heading .otherlinks a {
+  font-size: 1.1em;
+  color: #121212;
+  padding: 0.5em;
+}
+.App .main .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .main .content .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0.5em;
+}
+.App .main .content .list b {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.5em;
+}
+.App .main .content .list a {
+  font-size: 1.1em;
+  color: #121212;
+  padding: 0.5em 0;
+}
+.App .main .content .list .main-button {
+  background-color: #f7edf1;
+  font-size: 1.1em;
+  color: #121212;
+  padding: 0.5em 2em;
+  border: 2px solid #d49fb3;
+  border-radius: 40%;
+  margin: 0.5em;
+}
+.App .main .content .homeimgs {
+  width: 15em;
+  padding: 0.5em 0;
+  margin: 0;
+}
+.App .main .content .homeimgs img {
+  width: 13em;
+  border-radius: 10%;
+}
+.App .main .content .shootlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0.5em;
+}
+.App .main .content .shootlist b {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.5em;
+}
+.App .main .content .shootlist a {
+  font-size: 1.1em;
+  color: #121212;
+  padding: 0.5em 0;
+}
+.App .main .gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+.App .main .gallery img {
+  width: 10em;
+  margin: 0.25em;
+  border-radius: 50%;
+}
+.App .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 0 0 1em 0;
+  font-size: 1.1em;
+}
+.App .footer p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.App .footer p a {
+  color: #121212;
+}
+.App .footer p img {
+  width: 3em;
+  padding: 0.5em;
+}
+@media only screen and (min-width: 400px) {
+  .App .header img {
+    width: 20em;
+  }
+  .App .main .content .homeimgs {
+    width: 25em;
+  }
+  .App .main .content .homeimgs img {
+    width: 20em;
+  }
+}
+@media only screen and (min-width: 530px) {
+  .App .header img {
+    width: 30em;
+  }
+  .App .main .content .homeimgs {
+    width: 32em;
+  }
+  .App .main .content .homeimgs img {
+    width: 30em;
+  }
+}
+@media only screen and (min-width: 730px) {
+  .App .header nav a {
+    font-size: 1.2em;
+  }
+  .App .main {
+    border-radius: 15%;
+  }
+  .App .main .heading h1 {
+    font-size: 3em;
+  }
+  .App .main .heading h3 {
+    font-size: 1.8em;
+  }
+  .App .main .heading .otherlinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .main .content .homeimgs {
+    width: 50em;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .App .header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .header nav .icon {
+    display: none;
+  }
+  .App .header nav #desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .header nav #desktop a {
+    padding: 14px 2.5em;
+  }
+  .App .main .alt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .App .main .alt .list {
+    padding: 1em 1.5em;
+  }
+  .App .main .alt .shootlist {
+    padding: 1em 1.5em;
+  }
+  .App .main .alt .homeimgs {
+    width: 17em;
+  }
+  .App .main .alt .homeimgs img {
+    width: 12em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .App .header img {
+    width: auto;
+  }
+  .App .header nav #desktop a {
+    padding: 14px 3.5em;
+  }
+  .App .main .alt .list {
+    padding: 1em 2.5em;
+  }
+  .App .main .alt .homeimgs {
+    width: 22em;
+  }
+  .App .main .alt .homeimgs img {
+    width: 18em;
+  }
+}
+@media only screen and (min-width: 1330px) {
+  .App .header nav a {
+    padding: 14px 35px;
+  }
+}

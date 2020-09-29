@@ -1,0 +1,142 @@
+// Imports
+
+@import 'less/reset.less';
+@import 'less/base.less';
+
+
+// Main Styles
+.App {
+    .flexcolumn();
+
+    .header {z-index: 10;
+        overflow: hidden;
+        position: relative;
+        width: 95%;
+        .flexcolumn();
+    
+        img {width: 13em;
+            justify-content: center;
+            align-self: center;}
+        nav {background-color: @navbg;
+            width: 95%;
+            .flexcolumn();
+    
+            #myLinks {display: none;}
+            #desktop {display: none;}
+    
+            a {color: @font;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            
+                .icon {background: @navbg;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;}
+    
+                &:hover {background-color: @font;
+                    color: @mainbg;
+                    font-weight: bold;}
+                &:visited {text-decoration: none;}
+            }
+        }
+    }
+    .main {.flexcolumn();
+        position: relative;
+        margin: 1em .5em 2em .5em;
+        border: @border;
+        border-radius: 5%;
+        width: 95%;
+    
+        .heading {.flexcolumn();
+            padding: 1em;
+    
+            h1 {font-size: 2.5em;
+                justify-content: center;
+                text-align: center;}
+    
+            h2 {font-size: 2.25em;}
+    
+            h3 {font-size: 1.5em;
+                margin: .5em;
+                text-align: center;}
+            .otherlinks {.flexcolumn();
+                p {font-size: 1.1em;
+                    padding: .8em;}
+                a {font-size: 1.1em;
+                    color: @font;
+                    padding: .5em;}
+            }
+        }
+        .content {.flexcolumn();
+            .list {.flexcolumn();
+                padding: 1em .5em;
+                b {font-size: 1.1em;
+                    font-weight: bold;
+                    padding: .5em;}
+                a {font-size: 1.1em;
+                    color: @font;
+                    padding: .5em 0;}
+                .main-button {
+                    background-color: @altbg;
+                    font-size: 1.1em;
+                    color: @font;
+                    padding: .5em 2em;
+                    border: @altborder;
+                    border-radius: 40%;
+                    margin: .5em;
+                }
+            }
+            .homeimgs {width: 15em;
+                padding: .5em 0;
+                margin: 0;
+                img {width: 13em;
+                    border-radius: 10%;}
+            }
+            .shootlist {.flexcolumn();
+                padding: 1em .5em;
+                b {font-size: 1.1em;
+                    font-weight: bold;
+                    padding: .5em;}
+                a {font-size: 1.1em;
+                    color: @font;
+                    padding: .5em 0;}
+    
+            }
+    
+        }
+        .gallery {.flexrow();
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 1em;
+            img {width: 10em;
+                margin: .25em;
+                border-radius: 50%;}
+        }
+    }
+    .footer {.flexcolumn();
+        .flexcolumn();
+        width: 95%;
+        padding: 0 0 1em 0;
+        font-size: 1.1em;
+        p {
+            .flexrow();
+            justify-content: center;
+            a {
+                color: @font;
+            }
+
+            img {
+                width: 3em;
+                padding: .5em
+            }
+        }
+    }
+}
+
+
+
+@import 'less/media.less';

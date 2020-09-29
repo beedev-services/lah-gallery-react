@@ -1,0 +1,110 @@
+@import 'base.less';
+
+@media @400 {
+    .App {
+        .header {
+            img {width: 20em;}
+        }
+        .main {
+            .content {
+                .homeimgs {width: 25em;
+                    img {width: 20em;}
+                }
+            }
+        }
+    }
+}
+
+@media @530 {
+    .App {
+        .header {
+            img {width: 30em;}
+        }
+        .main {
+            .content {
+                .homeimgs {width: 32em;
+                    img {width: 30em;}
+                }
+            }
+        }
+    }
+}
+
+@media @730 {
+    .App {
+        .header {
+            nav {
+                a {font-size: 1.2em;}
+            }
+        }
+        .main {border-radius: 15%;
+            .heading {
+                h1 {font-size: 3em;}
+                h3 {font-size: 1.8em;}
+                .otherlinks {.flexrow();}
+            }
+            .content {
+                .homeimgs {width: 50em;}
+            }
+        }
+    }
+}
+
+@media @850 {
+    .App {
+        .header {
+            nav {.flexrow();
+    
+                .icon {display: none;}
+                #desktop {.flexrow();
+                    a {padding: 14px 2.5em;}
+                }
+            }
+        }
+        .main {
+            .alt {.flexrow();
+                justify-content: space-between;
+                align-items: flex-start;
+                .list {padding: 1em 1.5em;}
+    
+                .shootlist {padding: 1em 1.5em;}
+    
+                .homeimgs {width: 17em;
+                    img {width: 12em;}
+                }
+            }
+        }
+    }
+}
+
+@media @1000 {
+    .App {
+        .header {
+            img {width: auto;}
+            nav {
+                #desktop {
+                    a {padding: 14px 3.5em;}
+                }
+            }
+        }
+        .main {
+            .alt {
+                .list {padding: 1em 2.5em;}
+    
+                .homeimgs {width: 22em;
+                    img {width: 18em;}    
+                }
+            }
+        }
+    }
+}
+
+@media @1330 {
+    .App {
+        .header {
+            nav {
+                a {padding: 14px 35px;}
+            }
+        }
+    }
+}

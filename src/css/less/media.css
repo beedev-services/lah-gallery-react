@@ -1,0 +1,121 @@
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumnalt {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  margin: auto;
+}
+@media only screen and (min-width: 400px) {
+  .App .header img {
+    width: 20em;
+  }
+  .App .main .content .homeimgs {
+    width: 25em;
+  }
+  .App .main .content .homeimgs img {
+    width: 20em;
+  }
+}
+@media only screen and (min-width: 530px) {
+  .App .header img {
+    width: 30em;
+  }
+  .App .main .content .homeimgs {
+    width: 32em;
+  }
+  .App .main .content .homeimgs img {
+    width: 30em;
+  }
+}
+@media only screen and (min-width: 730px) {
+  .App .header nav a {
+    font-size: 1.2em;
+  }
+  .App .main {
+    border-radius: 15%;
+  }
+  .App .main .heading h1 {
+    font-size: 3em;
+  }
+  .App .main .heading h3 {
+    font-size: 1.8em;
+  }
+  .App .main .heading .otherlinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .main .content .homeimgs {
+    width: 50em;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .App .header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .header nav .icon {
+    display: none;
+  }
+  .App .header nav #desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .header nav #desktop a {
+    padding: 14px 2.5em;
+  }
+  .App .main .alt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .App .main .alt .list {
+    padding: 1em 1.5em;
+  }
+  .App .main .alt .shootlist {
+    padding: 1em 1.5em;
+  }
+  .App .main .alt .homeimgs {
+    width: 17em;
+  }
+  .App .main .alt .homeimgs img {
+    width: 12em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .App .header img {
+    width: auto;
+  }
+  .App .header nav #desktop a {
+    padding: 14px 3.5em;
+  }
+  .App .main .alt .list {
+    padding: 1em 2.5em;
+  }
+  .App .main .alt .homeimgs {
+    width: 22em;
+  }
+  .App .main .alt .homeimgs img {
+    width: 18em;
+  }
+}
+@media only screen and (min-width: 1330px) {
+  .App .header nav a {
+    padding: 14px 35px;
+  }
+}
