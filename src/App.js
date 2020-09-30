@@ -12,8 +12,10 @@ import Easter from './components/Easter'
 import Valentines from './components/Valentines'
 import Sports from './components/Sports'
 
-import Sep2919a from './components/family/Sep2919a'
-import Oct0519a from './components/family/Oct0519a'
+import Sep2919a from './components/family/2019/Sep2919a'
+import Oct0519a from './components/family/2019/Oct0519a'
+import Nov0319a from './components/family/2019/Nov0319a'
+import Dec2219c from './components/family/2019/Dec2219c'
 
 export default function App() {
 
@@ -36,6 +38,12 @@ export default function App() {
           </Route>
           <Route path="/family/oct0519a">
             <Oct0519a />
+          </Route>
+          <Route path='/family/nov0319a'>
+            <Nov0319a />
+          </Route>
+          <Route path='/family/dec2219c'>
+            <Dec2219c />
           </Route>
           <Route path="/senior" component={Senior} />
           <Route path="/baby" component={Baby} />

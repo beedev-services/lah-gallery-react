@@ -5,14 +5,7 @@ import "react-alice-carousel/lib/alice-carousel.css"
 
 
 export default function Family() {
-    // const history = useHistory()
     const { goBack } = useHistory()
-
-    // const routeToSep2919a = event => {
-    //     history.push('./family/Sep2919a')
-    //     console.log("tell me something please")
-    // }
-    // <button onClick={routeToSep2919a}>September</button>
 
     return (
         <div>
@@ -25,8 +18,8 @@ export default function Family() {
                     <b>2019:</b>
                     <Link to="/family/sep2919a">September - Family Shoot</Link>
                     <Link to="/family/oct0519a">October - Nikki & Josh's Couple Session</Link>
-                    <Link to="Nov0319a">November - Family Shoot</Link>
-                    <Link to="Dec2219c">December - Family Shoot</Link>
+                    <Link to="/family/nov0319a">November - Family Shoot</Link>
+                    <Link to="/family/dec2219c">December - Family Shoot</Link>
                 </div>
                 <div className="homeimgs">
                     <Carousel autoPlay autoPlayInterval="2000">

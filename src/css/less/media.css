@@ -13,6 +13,17 @@
   display: flex;
   flex-direction: column;
 }
+.flexcolrev {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.flexrowrev {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 .center {
   margin: auto;
 }
@@ -26,6 +37,12 @@
   .App .main .content .homeimgs img {
     width: 20em;
   }
+  .App .main .gallery {
+    width: 23em;
+  }
+  .App .main .gallery .carousel-root .slide img {
+    width: 21em;
+  }
 }
 @media only screen and (min-width: 530px) {
   .App .header img {
@@ -36,6 +53,27 @@
   }
   .App .main .content .homeimgs img {
     width: 30em;
+  }
+  .App .main .gallery {
+    width: 30em;
+  }
+  .App .main .gallery .carousel-root .slide img {
+    width: 28em;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 430px;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper .thumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper .thumbs .thumb {
+    border-radius: 50%;
+    padding: 1px;
   }
 }
 @media only screen and (min-width: 730px) {
@@ -58,6 +96,15 @@
   }
   .App .main .content .homeimgs {
     width: 50em;
+  }
+  .App .main .gallery {
+    width: 40em;
+  }
+  .App .main .gallery .carousel-root .slide img {
+    width: 35em;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper {
+    max-width: 515px;
   }
 }
 @media only screen and (min-width: 850px) {
@@ -96,6 +143,9 @@
   .App .main .alt .homeimgs img {
     width: 12em;
   }
+  .App .main .gallery .carousel-root .thumbs-wrapper {
+    max-width: 600px;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .App .header img {
@@ -112,6 +162,27 @@
   }
   .App .main .alt .homeimgs img {
     width: 18em;
+  }
+  .App .main .gallery {
+    width: 45em;
+  }
+  .App .main .gallery .carousel-root .slide img {
+    width: 38em;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 815px;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper .thumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper .thumbs .thumb {
+    border-radius: 50%;
+    padding: 1px;
   }
 }
 @media only screen and (min-width: 1330px) {

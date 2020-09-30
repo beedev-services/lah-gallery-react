@@ -13,6 +13,17 @@
   display: flex;
   flex-direction: column;
 }
+.flexcolrev {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.flexrowrev {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 .center {
   margin: auto;
 }

@@ -148,6 +148,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+.flexcolrev {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.flexrowrev {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 .center {
   margin: auto;
 }
@@ -322,17 +333,56 @@ body {
   padding: 0.5em 0;
 }
 .App .main .gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 1em;
+  width: 15em;
+  padding: 0.5em 0;
+  margin: 0;
 }
-.App .main .gallery img {
-  width: 10em;
+.App .main .gallery .carousel-root {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+.App .main .gallery .carousel-root .carousel {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.App .main .gallery .carousel-root .carousel .control-dots {
+  background-color: #d49fb3;
+  border-radius: 40%;
+  width: 95%;
+}
+.App .main .gallery .carousel-root .carousel .carousel-status {
+  text-align: center;
+  position: relative;
+  font-size: 1em;
+  text-shadow: 1px 1px 1px #121212;
+  color: #d49fb3;
+}
+.App .main .gallery .carousel-root .slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7edf1;
+  border-radius: 10%;
+}
+.App .main .gallery .carousel-root .slide img {
+  width: 14em;
   margin: 0.25em;
-  border-radius: 50%;
+  border-radius: 10%;
+}
+.App .main .gallery .carousel-root .carousel-slider {
+  position: relative;
+}
+.App .main .gallery .carousel-root .carousel-slider .control-arrow {
+  color: #d49fb3;
+}
+.App .main .gallery .carousel-root .thumbs-wrapper {
+  display: none;
 }
 .App .footer {
   display: flex;
@@ -366,6 +416,12 @@ body {
   .App .main .content .homeimgs img {
     width: 20em;
   }
+  .App .main .gallery {
+    width: 23em;
+  }
+  .App .main .gallery .carousel-root .slide img {
+    width: 21em;
+  }
 }
 @media only screen and (min-width: 530px) {
   .App .header img {
@@ -376,6 +432,27 @@ body {
   }
   .App .main .content .homeimgs img {
     width: 30em;
+  }
+  .App .main .gallery {
+    width: 30em;
+  }
+  .App .main .gallery .carousel-root .slide img {
+    width: 28em;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 430px;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper .thumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper .thumbs .thumb {
+    border-radius: 50%;
+    padding: 1px;
   }
 }
 @media only screen and (min-width: 730px) {
@@ -398,6 +475,15 @@ body {
   }
   .App .main .content .homeimgs {
     width: 50em;
+  }
+  .App .main .gallery {
+    width: 40em;
+  }
+  .App .main .gallery .carousel-root .slide img {
+    width: 35em;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper {
+    max-width: 515px;
   }
 }
 @media only screen and (min-width: 850px) {
@@ -436,6 +522,9 @@ body {
   .App .main .alt .homeimgs img {
     width: 12em;
   }
+  .App .main .gallery .carousel-root .thumbs-wrapper {
+    max-width: 600px;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .App .header img {
@@ -452,6 +541,27 @@ body {
   }
   .App .main .alt .homeimgs img {
     width: 18em;
+  }
+  .App .main .gallery {
+    width: 45em;
+  }
+  .App .main .gallery .carousel-root .slide img {
+    width: 38em;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 815px;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper .thumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .App .main .gallery .carousel-root .thumbs-wrapper .thumbs .thumb {
+    border-radius: 50%;
+    padding: 1px;
   }
 }
 @media only screen and (min-width: 1330px) {
