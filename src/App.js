@@ -12,6 +12,9 @@ import Easter from './components/Easter'
 import Valentines from './components/Valentines'
 import Sports from './components/Sports'
 
+import Sep2919a from './components/family/Sep2919a'
+import Oct0519a from './components/family/Oct0519a'
+
 export default function App() {
 
   return (
@@ -27,7 +30,13 @@ export default function App() {
       </div>
       <div className='main'>
       <Switch>
-          <Route path="/family" component={Family} />
+          <Route exact path="/family" component={Family} />
+          <Route path="/family/sep2919a">
+            <Sep2919a />
+          </Route>
+          <Route path="/family/oct0519a">
+            <Oct0519a />
+          </Route>
           <Route path="/senior" component={Senior} />
           <Route path="/baby" component={Baby} />
           <Route path="/wedding" component={Wedding} />

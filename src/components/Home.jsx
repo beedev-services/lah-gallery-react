@@ -1,7 +1,6 @@
 import React from 'react'
-import { Route, Switch, useHistory, Link } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 
-// import Sep2919a from './family/Sep2919a'
 
 export default function Home() {
     const history = useHistory();
@@ -50,11 +49,6 @@ export default function Home() {
                     <button onClick={routeToNature} className="main-button">Nature & Art - Coming Soon</button>
                     <button onClick={routeToSpecial} className="main-button">Special Shoots = Coming Soon</button>
                 </div>
-                {/* <Switch>
-                    <Route path="/family/Sep2919a">
-                        <Sep2919a />
-                    </Route>
-                </Switch> */}
             </div>
         </div>
     )

@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-export default function Sep2919a() {
+export default function Oct0519a() {
     return (
         <div>
-            testing shoot
+            testing shoot Oct
         </div>
     )
 }
