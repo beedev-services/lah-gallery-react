@@ -1,28 +1,9 @@
 import React from 'react'
-import { useHistory, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 export default function Home() {
-    const history = useHistory();
 
-    const routeToToy = event => {
-        history.push('./toy');
-    }
-    const routeToEaster = event => {
-        history.push('./easter');
-    }
-    const routeToValentines = event => {
-        history.push('./valentines');
-    }
-    const routeToSports = event => {
-        history.push('./sports');
-    }
-    const routeToNature = event => {
-        history.push('./nature');
-    }
-    const routeToSpecial = event => {
-        history.push('./special');
-    }
     return (
         <div>
             <div className='heading'>
@@ -39,15 +20,16 @@ export default function Home() {
                 </div>
                 <div className="list">
                     <b>Holidays</b>
-                    <button onClick={routeToToy} className="main-button">Toy Drive</button>
-                    <button onClick={routeToEaster} className="main-button">Easter</button>
-                    <button onClick={routeToValentines} className="main-button">Valentines Day</button>
+                    <p>Under Construction</p>
+                    {/* <Link to="/toy">Toy Drive - Under Construction</Link> */}
+                    {/* <Link to="/easter">Easter - Under Construction</Link> */}
                 </div>
                 <div className="list">
                     <b>Events & Other Shoots</b>
-                    <button onClick={routeToSports} className="main-button">Sport Shoots</button>
-                    <button onClick={routeToNature} className="main-button">Nature & Art - Coming Soon</button>
-                    <button onClick={routeToSpecial} className="main-button">Special Shoots = Coming Soon</button>
+                    <p>Coming Soon</p>
+                    {/* <Link to="/sports">Sport Shoots - Coming Soom</Link> */}
+                    {/* <Link to="/nature">Nature & Art - Coming Soon</Link> */}
+                    {/* <Link to="/special">Special Shoots = Coming Soon</Link> */}
                 </div>
             </div>
         </div>
